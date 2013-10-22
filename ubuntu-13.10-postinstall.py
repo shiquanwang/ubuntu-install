@@ -17,3 +17,10 @@ __licence__ = 'LGPL'
 """
 Post installation script for Ubuntu 13.10
 """
+
+
+# Global variables
+_FOR_UBUNTU = "saucy"
+_DEBUG = 1
+_LOG_FILE = "/tmp/%s.log" % __appname__
+_CONF_FILE = ""
