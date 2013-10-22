@@ -34,3 +34,19 @@ _APT_UPDATE = "DEBIAN_FRONTEND=noninteractive apt-get -y update"
 _APT_UPGRADE = "DEBIAN_FRONTEND=noninteractive apt-get -y upgrade"
 _APT_KEY = "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
 _WGET = "wget"
+
+
+# Classes
+class colors:
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    BLUE = '\033[94m'
+    ORANGE = '\033[93m'
+    NO = '\033[0m'
+
+    def disable(self):
+        self.RED = ''
+        self.GREEN = ''
+        self.BLUE = ''
+        self.ORANGE = ''
+        self.NO = ''
