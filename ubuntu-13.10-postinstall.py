@@ -24,3 +24,13 @@ _FOR_UBUNTU = "saucy"
 _DEBUG = 1
 _LOG_FILE = "/tmp/%s.log" % __appname__
 _CONF_FILE = ""
+
+
+# System commands
+_APT_ADD = "add-apt-repository -y"
+_APT_INSTALL = "DEBIAN_FRONTEND=noninteractive apt-get -y -f install"
+_APT_REMOVE = "DEBIAN_FRONTEND=noninteractive apt-get -y -f remove"
+_APT_UPDATE = "DEBIAN_FRONTEND=noninteractive apt-get -y update"
+_APT_UPGRADE = "DEBIAN_FRONTEND=noninteractive apt-get -y upgrade"
+_APT_KEY = "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys"
+_WGET = "wget"
